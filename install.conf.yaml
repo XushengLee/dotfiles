@@ -1,0 +1,15 @@
+- defaults:
+    link:
+      create: true  # When true, create parent directories to the link as needed. (default: false)
+      relink: true  # Removes the old target if it's a symlink (default: false)
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.shell:
+    ~/.vimrc:
+    ~/.zsh:
+    ~/.zshrc:
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules] 
