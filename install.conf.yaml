@@ -7,9 +7,10 @@
 
 - link:
     ~/.shell:
-    ~/.vimrc:
     ~/.zsh:
     ~/.zshrc:
+    ~/.vim:
+    ~/.vimrc:
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules] 
