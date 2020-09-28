@@ -1,1 +1,3 @@
 vim/plugged
+vim/undodir/*
+vim/coc-settings.json
