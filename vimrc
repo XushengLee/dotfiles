@@ -39,7 +39,7 @@ call plug#end()
 " Colorscheme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 colorscheme gruvbox
-
+set background=dark
 " Lightline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " --INSERT-- is unncessary because of lightline
@@ -122,3 +122,9 @@ set linebreak           " Have lines wrap instead of continue off-screen, opposi
 " set ttyfast             " Improve redrawing
 
 
+" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
