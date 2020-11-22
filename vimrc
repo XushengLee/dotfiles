@@ -121,6 +121,22 @@ set linebreak           " Have lines wrap instead of continue off-screen, opposi
 " set updatetime=100      " Some plugins require fast updatetime
 " set ttyfast             " Improve redrawing
 
+" https://github.com/awesome-streamers/awesome-streamerrc/blob/master/ThePrimeagen/init.vim
+set colorcolumn=80
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+
+" Myself
+" cursor shape
+
+" following need to put after the colorscheme command
+" set list
+" set listchars=trail:*
+" LightCyan Magenta DarkGray DarkMagenta
+highlight ExtraWhitespace ctermbg=DarkGreen guibg=#3f3935
+match ExtraWhitespace /\s\+$/     
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
