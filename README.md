@@ -23,6 +23,10 @@ If the python interpreter is wrong, `:CocConfig`, and put
 # local zshrc (some fancy tools)
 ## macOS
 ```
+# to make grep and ls display with better color
+brew install coreutils
+
+# useful tools
 brew install z
 # add the line below to zshrc_local_after 
 . /usr/local/etc/profile.d/z.sh
