@@ -1,9 +1,10 @@
 # Use colors in coreutils utilities output
 if [[ "$OSTYPE" == "darwin"* ]]; then
 #    alias ls='ls -G'
-#    alias grep='ggrep --color'
+# "brew install coreutils" to mkdir color better and more
+# depends on the actual machine, use or comment the below lines
     alias ls='gls --color=auto'
-    alias grep='ggrep --color'
+#    alias grep='ggrep --color'
 else
     alias ls='ls --color=auto'
     alias grep='grep --color'
@@ -21,6 +22,9 @@ alias mv='mv -i'
 
 # git related aliases
 alias gag='git exec ag'
+
+# history size
+alias history='history 1'
 
 # Update dotfiles
 dfu() {
